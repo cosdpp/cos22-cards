@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Eric’s Card</title>
+    <style>
+     @font-face {
+          font-family: "Bridge Head Basic";
+          src: url("https://yatil.net/assets/fonts/BridgeHeadBasic-Black.woff2") format("woff2");
+          font-weight: normal;
+          font-style:normal
+      }
+
+      @font-face {
+          font-family: "Bariol";
+          src: url("https://yatil.net/assets/fonts/bariol_regular.woff2") format("woff2");
+          font-weight: normal;
+          font-style:normal
+      }
+
+      @font-face {
+          font-family: "Bariol";
+          src: url("https://yatil.net/assets/fonts/bariol_regular_italic.woff2") format("woff2");
+          font-weight: normal;
+          font-style:italic
+      }
+
+      @font-face {
+          font-family: "Bariol";
+          src: url("https://yatil.net/assets/fonts/bariol_bold.woff2") format("woff2");
+          font-weight: bold;
+          font-style:normal
+      }
+
+      @font-face {
+          font-family: "Bariol";
+          src: url("https://yatil.net/assets/fonts/bariol_bold_italic.woff2") format("woff2");
+          font-weight: bold;
+          font-style:italic
+      }
+      :root {
+        --default-radius: 15px;
+        --default-padding: 1rem;
+      }
+      body { font-family: Bariol, sans-serif; font-size: 1.25rem; background-color: #e8eeee; color: #333; line-height: 1.5;
+        max-width: 60rem;
+        margin: 0 auto;
+        padding: var(--default-padding);
+      }
+      svg {
+        height: 1.5em;
+        width: 1.5em;
+        vertical-align: middle;
+        fill: currentColor;
+      }
+
+      header {
+        background-color: #fff;
+        padding: var(--default-padding);
+        border-top-left-radius: var(--default-radius);
+        border-top-right-radius: var(--default-radius);
+        margin-bottom: var(--default-padding);
+      }
+      header h1 { font-family: "Bridge Head Basic"; }
+      header h1, header p {
+        margin: 0;
+      }
+      .pronouns {
+        font-style: italic;
+      }
+
+      header p {
+        display: flex;
+        justify-content: space-between;
+      }
+      .twitter-button {
+        background-color: #316cb2;
+        color: white;
+        padding: calc(var(--default-padding) / 4) var(--default-padding);
+        border-radius: 2rem;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem;
+      }
+      .twitter-button:hover,
+      .twitter-button:focus {
+        background-color: #114c92;
+        text-decoration: underline;
+      }
+      .twitter-button svg {
+        transition: transform .3s linear;
+      }
+      .twitter-button:hover svg,
+      .twitter-button:focus svg {
+        transform: rotate(-12deg);
+      }
+
+      section {
+        background-color: #fff;
+        padding: var(--default-padding);
+        margin-bottom: var(--default-padding);
+      }
+
+      section :first-child {
+        margin-top: 0;
+      }
+
+      section :last-child {
+        margin-bottom: 0;
+      }
+
+      section:last-child {
+        border-bottom-left-radius: var(--default-radius);
+        border-bottom-right-radius: var(--default-radius);
+      }
+
+      .avatar {
+        float: right;
+        width: 250px;
+        max-width: 100%;
+        border: var(--default-padding) solid white;
+        margin-top: calc(var(--default-padding) * -1);
+        margin-right: calc(var(--default-padding) * -1);
+      }
+
+      .hobbies {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: calc(var(--default-padding) / 2);
+        margin:0;
+        padding: 0;
+        list-style: none;
+      }
+      .hobbies li {
+        border-radius: var(--default-radius);
+        background-color: #e8eeee;
+        margin:0;
+        padding: calc(var(--default-padding) / 1.5);
+      }
+
+      .workxp li{
+        margin-bottom: calc(var(--default-padding) / 2);
+      }
+
+      .awards {
+        display: flex;
+        justify-content: space-between;
+        gap: calc(var(--default-padding) / 2);
+        margin:0;
+        padding: 0;
+        list-style: none;
+      }
+
+      .awards li {
+        position: relative;
+        border-radius: var(--default-radius);
+        background-color: #e8eeee;
+        margin:0;
+        padding: calc(var(--default-padding) / 1.5);
+      }
+      iframe {
+        max-width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+
+      #writing {
+        columns: 2;
+      }
+
+      #writing a {
+        color: currentcolor;
+        text-decoration: underline;
+        text-decoration-color: #ad1d1d;
+      }
+      #writing a:hover,
+      #writing a:focus{
+        text-underline-offset: 2px;
+        text-decoration-thickness: 4px;
+      }
+      #writing ::marker {
+        color: #666;
+      }
+
+      .gold, .silver {
+        color: black;
+        border-radius: 50%;
+        background-color: gold;
+        padding: 6px;
+        display: block;
+        margin: -2rem auto 0 !important;
+      }
+
+      .silver {
+        background-color: silver;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Eric Eggert</h1>
+      <p><span class="pronouns">he/him/his</span> <a href="https://twitter.com/yatil" aria-label="Follow Me on Twitter" class="twitter-button"><svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="svg-inline--fa fa-twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M459.4 151.7c.325 4.548 .325 9.097 .325 13.65 0 138.7-105.6 298.6-298.6 298.6-59.45 0-114.7-17.22-161.1-47.11 8.447 .974 16.57 1.299 25.34 1.299 49.06 0 94.21-16.57 130.3-44.83-46.13-.975-84.79-31.19-98.11-72.77 6.498 .974 12.99 1.624 19.82 1.624 9.421 0 18.84-1.3 27.61-3.573-48.08-9.747-84.14-51.98-84.14-102.1v-1.299c13.97 7.797 30.21 12.67 47.43 13.32-28.26-18.84-46.78-51.01-46.78-87.39 0-19.49 5.197-37.36 14.29-52.95 51.65 63.67 129.3 105.3 216.4 109.8-1.624-7.797-2.599-15.92-2.599-24.04 0-57.83 46.78-104.9 104.9-104.9 30.21 0 57.5 12.67 76.67 33.14 23.72-4.548 46.46-13.32 66.6-25.34-7.798 24.37-24.37 44.83-46.13 57.83 21.12-2.273 41.58-8.122 60.43-16.24-14.29 20.79-32.16 39.31-52.63 54.25z"></path></svg> Follow Me</a></p>
+    </header>
+    <main>
+      <section aria-labelledby="bio-heading">
+        <h2 id="bio-heading">Bio</h2>
+        <img class="avatar" src="ericeggert.jpg" alt="Eric’s Avatar: He, a white man with a metal t-shirt, stands in front of a blue police box. It is the TARDIS from Doctor Who.">
+        <p>As a consultant on accessibility and inclusion, I support designers, developers, project managers, and business owners to achieve accessibility for their products and services.</p>
+        <p>I believe that accessibility can drive innovation when it’s considered a fundamental quality of the product. While everyone benefits from an accessible product or service, access to information and participation is a human right.</p>
+      </section>
+      <section aria-labelledby="hobbies-heading">
+          <h2 id="hobbies-heading">Hobbies</h2>
+          <ul class="hobbies">
+            <li><svg aria-hidden="true" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M368 224v-80c0-8.8-7.2-16-16-16s-16 7.15-16 16v80h-22.94l-29.22-48.7C272.3 156 251.1 144 228.6 144c-28.62 0-54.13 19.23-61.97 46.75l-10.69 37.39c-8.64 29.96 1.16 62.46 24.86 82.66l69.66 59.73C253.1 373.6 256 378 256 382.7V496c0 8.84 7.15 16 16 16 8.84 0 16-7.16 16-16V382.7c0-14.03-6.125-27.31-16.78-36.44l-69.66-59.72C187.4 274.4 181.5 254.9 186.7 236.9l10.69-37.39C201.3 185.7 214.2 176 228.6 176c11.34 0 22 6.03 27.84 15.77l33.88 56.47C293.2 253 298.4 256 304 256h32v240c0 8.84 7.15 16 15.1 16 7.94 0 16.9-7.2 16.9-16V256c8.8 0 16-7.2 16-16s-7.2-16-16-16ZM163.9 352.5c-8.75-2.24-17.28 3.06-19.41 11.64l-32 128c-2.125 8.56 3.06 17.25 11.66 19.39 1.25.27 2.55.47 3.85.47 7.18 0 13.72-4.85 15.53-12.12l32-128c2.17-8.58-3.03-17.28-11.63-19.38ZM264 112c30.9 0 56-25.12 56-56s-25.1-56-56-56 -56 25.12-56 56 25.1 56 56 56Zm0-80c13.2 0 24 10.77 24 24s-10.8 24-24 24 -24-10.77-24-24 10.8-24 24-24ZM160.4 91.47c-2.1-3.72-5.5-6.47-9.6-7.64 -49.1-14.3-103.55 18.57-118.96 71.67L.62 263.1c-1.22 4.3-.625 8 1.65 12.7 2.312 3.81 6.09 6.5 10.47 7.4l76.84 16.02c1.09.23 2.18.34 3.25.34 7 0 13.34-4.6 15.38-11.55l53.5-184.4c1.17-4.04.67-8.43-1.33-12.15ZM81.59 264.9l-45.4-9.5 26.41-90.97C67.53 147.4 79 132.2 94.09 122.5c10.09-6.44 21-9.85 31.75-10.08L81.59 264.9Z"/></svg> Hiking</li>
+            <li><svg aria-hidden="true" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 0C114.6 0 0 114.6 0 256c0 141.4 114.6 256 256 256s256-114.6 256-256C512 114.6 397.4 0 256 0Zm0 480C132.5 480 32 379.5 32 256 32 132.5 132.5 32 256 32c123.5 0 224 100.5 224 224s-100.5 224-224 224Zm0-432c-79.4 0-144 64.6-144 144s64.59 144 144 144 144-64.59 144-144 -64.6-144-144-144Zm0 256c-61.7 0-112-50.2-112-112s50.3-112 112-112 112 50.25 112 112 -50.2 112-112 112Zm48-160c0-26.5-21.5-48-48-48s-48 21.5-48 48c0 11.53 4.25 21.97 11.04 30.26C207.5 184.5 200 199.3 200 216c0 30.9 25.1 56 56 56s56-25.12 56-56c0-16.66-7.46-31.48-19.04-41.74C299.8 165.1 304 155.5 304 144Zm-48-16c8.82 0 16 7.18 16 16 0 8.81-7.2 16-16 16s-16-7.2-16-16 7.2-16 16-16Zm0 112c-13.23 0-24-10.78-24-24s10.8-24 24-24 24 10.78 24 24 -10.8 24-24 24Z"/></svg> Pool & Snooker</li>
+            <li><svg aria-hidden="true" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M88 272c0-8.8 7.16-16 16-16h64c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-64c-8.84 0-16-7.2-16-16v-64Zm72 56v-48h-48v48h48Zm8-200c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-64c-8.84 0-16-7.2-16-16v-64c0-8.8 7.16-16 16-16h64Zm-56 24v20h20v-20h-20Zm28 0v20h20v-20h-20Zm0 28v20h20v-20h-20Zm-8 20v-20h-20v20h20Zm68-56c0-8.8 7.2-16 16-16h64c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16h-64c-8.8 0-16-7.2-16-16v-64Zm44 56v-20h-20v20h20Zm8 0h20v-20h-20v20Zm0-28h20v-20h-20v20Zm-8-20h-20v20h20v-20ZM208 32h80c17.7 0 32 14.33 32 32v.8c18.3 3.71 32 19.85 32 39.2v376h16c8.8 0 16 7.2 16 16s-7.2 16-16 16H16c-8.84 0-16-7.2-16-16s7.16-16 16-16h16V104c0-19.35 13.74-35.49 32-39.2V64c0-17.67 14.33-32 32-32h80V16c0-8.84 7.2-16 16-16s16 7.16 16 16v16Zm104 64h-8c-8.8 0-16-7.16-16-16V64H96v16c0 8.84-7.16 16-16 16h-8c-4.42 0-8 3.58-8 8v376h256V104c0-4.42-3.6-8-8-8Z"/></svg> Doctor Who</li>
+            <li><svg aria-hidden="true" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M224 312c-32.88 0-64 8.625-64 43.75 0 33.13 12.88 104.5 20.62 132.8C185.8 507.7 205.1 512 224 512c18.9 0 38.25-4.375 43.38-23.38C275.1 459.9 288 388.8 288 355.8c0-35.2-31.1-43.8-64-43.8Zm13 166.5c-6 2-20 2-26 0 -7.5-29-19-95.1-19-122.7 0-16.25 64-16.38 64 0 0 27.6-11.5 93.8-19 122.7ZM224 160c-35.4 0-64 28.6-64 64s28.62 64 64 64c35.38 0 64-28.62 64-64 0-35.38-28.6-64-64-64Zm0 96c-17.6 0-32-14.4-32-32s14.38-32 32-32c17.62 0 32 14.38 32 32 0 17.62-14.4 32-32 32Zm0-256C100.5 0 0 100.5 0 224c0 69.39 31.41 133.8 86.16 176.6 6.875 5.4 16.97 4.2 22.44-2.75 5.46-6.97 4.21-17.02-2.75-22.47C58.91 338.7 32 283.5 32 224c0-105.9 86.13-192 192-192s192 86.13 192 192c0 59.48-26.91 114.7-73.84 151.4 -6.97 5.45-8.22 15.5-2.75 22.47 3.19 4.03 7.89 5.23 12.59 5.23 3.46 0 6.93-1.11 9.84-3.4 54.75-41.91 86.156-106.31 86.156-175.709 0-123.5-100.5-224-224-224Zm144 224c0-79.41-64.59-144-144-144s-144 64.6-144 144c0 25.34 6.65 50.25 19.28 72.02 4.43 7.67 14.25 10.2 21.88 5.82 7.625-4.43 10.25-14.22 5.81-21.86 -9.78-16.89-14.98-36.29-14.98-55.99 0-61.75 50.25-112 112-112s112 50.25 112 112c0 19.72-5.19 39.08-14.97 55.98 -4.44 7.64-1.82 17.44 5.81 21.86 2.55 1.46 5.25 2.16 8.05 2.16 5.5 0 10.88-2.86 13.84-7.99 12.56-21.72 19.26-46.72 19.26-72.02Z"/></svg> Podcasts</li>
+          </ul>
+        </section>
+        <section aria-labelledby="yt-heading">
+          <h2 id="yt-heading">My YouTube Video</h2>
+          <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rIebSHUZz_w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <section aria-labelledby="awards-heading">
+            <h2 id="awards-heading">Awards</h2>
+            <ul class="awards">
+              <li><svg class="gold" aria-hidden="true" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M288 358.3c13.98-8.09 17.53-30.04 28.88-41.39 11.35-11.35 33.3-14.88 41.39-28.87 7.98-13.79.16-34.54 4.37-50.29 4.05-15.25 20.45-29.25 20.45-45.75s-17.27-30.52-21.34-45.73c-4.21-15.75 3.61-36.5-4.37-50.29C349.29 82 327.35 78.46 316 67.11c-11.35-11.35-14.89-33.3-28.87-41.39 -13.76-7.97-34.61-.19-50.29-4.375 -14.36-4.08-28.36-21.35-44.86-21.35s-30.5 17.27-45.7 21.34c-15.8 4.2-36.6-3.6-50.32 4.36 -13.98 8.09-17.52 30.04-28.87 41.38 -11.34 11.35-33.3 14.89-41.39 28.87 -7.98 13.75-.16 34.55-4.37 50.25 -4.08 15.3-21.35 29.3-21.35 45.8 0 16.5 17.27 30.52 21.34 45.73 4.2 15.75-3.62 36.5 4.36 50.29 8.09 13.98 30.03 17.48 41.37 28.88 11.35 11.35 14.89 33.3 28.88 41.4 13.74 7.95 34.61.16 50.28 4.36 15.26 4.03 29.26 21.33 45.76 21.33 16.5 0 30.52-17.27 45.74-21.34 15.76-4.16 36.46 3.64 50.26-4.36Zm-96.9-6.8c-8.03-4.01-20.8-15.34-37.48-19.79 -16.71-4.48-33.04-1.31-42.29-1.72 -4.96-7.84-10.39-23.65-22.51-35.76 -12.11-12.12-27.85-17.5-35.77-22.52 .54-9.22 3.65-25.62-.79-42.22 -4.47-16.71-15.77-29.39-19.79-37.48 3.99-8.03 15.33-20.77 19.8-37.5 4.43-16.6 1.33-32.88 1.69-42.27 7.85-4.98 23.63-10.37 35.78-22.52 12.05-12.05 17.55-28.01 22.55-35.78 9.1-.37 25.6 2.74 42.2-1.7 16.74-4.48 29.33-15.74 37.48-19.79 8.02 3.99 20.77 15.33 37.49 19.8 16.74 4.47 33.01 1.29 42.28 1.71 4.84 7.65 10.45 23.71 22.51 35.76 12.03 12.04 28 17.61 35.77 22.52 .35 9.27-2.76 25.64 1.69 42.28 4.46 16.71 15.77 29.38 19.79 37.47 -3.98 8-15.32 20.78-19.8 37.5 -4.41 16.49-1.34 32.1-1.7 42.27 -7.86 4.96-23.64 10.38-35.78 22.52 -12.03 12.03-17.59 27.99-22.5 35.75 -9.2.41-25.54-2.78-42.28 1.7 -16.66 4.45-29.36 15.75-38.36 19.75Zm88-159.5c0-48.7-39.39-88-87.1-88 -47.71 0-88 39.3-88 88 0 48.58 39.39 88 87.1 88 47.71 0 88-39.4 88-88ZM192 248c-30.9 0-56-25.1-56-56 0-30.88 25.12-56 55.1-56s56 25.1 56 56 -24.2 56-55.1 56Zm165.4 122.1c-3.25-8.22-12.58-12.2-20.76-8.99 -8.21 3.25-12.23 12.55-8.99 20.77l24.22 61.25 -47.48-6.57 -24.64 42.28 -24.92-61.2c-3.33-8.21-12.72-12.14-20.84-8.79 -8.19 3.32-12.12 12.66-8.79 20.84l24.9 61.19c5.08 12.49 16.48 20.49 31.28 21.09 12.83 0 24.38-7.125 30.12-18.59l10.42-20.64 21.51 4.31c12.12 2.54 24.69-1.91 32.67-11.5 7.95-9.55 10.03-22.66 5.45-34.22l-24.18-61.262ZM150 408.9c-8.14-3.375-17.53.59-20.84 8.78l-24.92 61.2L79.6 436.6l-47.44 6.54 24.17-61.23c3.25-8.22-.79-17.52-8.99-20.77 -8.21-3.25-17.49.75-20.74 8.95L2.38 431.34c-4.578 11.56-2.5 24.67 5.45 34.22 8.01 9.625 20.52 14 32.61 11.52l21.58-4.33 10.41 20.62c5.76 11.45 17.27 18.58 31.42 18.58 13.42-.54 24.98-8.61 30.03-21.05l24.92-61.2c3.38-8.22-.62-17.52-8.82-20.82Z"/></svg> 2010: <abbr lang="de" title="Barrierefreies Internet Eröffnet Neue Einsichten">BIENE</abbr> in Gold for <em lang="de">Stiftung Lebenshilfe Duisburg</em> as part of the <em>Best Practices <span lang="de">Stammtisch Essen</span></em>, awarded by <em lang="de">Aktion Mensch</em></li>
+              <li><svg class="silver" aria-hidden="true" viewBox="0 0 384 512" xmlns="http://www.w3.org/2000/svg"><path d="M192 104c-48.6 0-88 39.3-88 88 0 48.58 39.39 88 87.1 88 47.71 0 88-39.4 88-88 0-48.7-38.5-88-87.1-88Zm0 144c-30.9 0-56-25.1-56-56 0-30.88 25.12-56 55.1-56s56 25.1 56 56 -24.2 56-55.1 56Zm192-56c0-16.5-17.27-30.52-21.34-45.73 -4.21-15.75 3.6-36.5-4.37-50.29 -8.09-13.98-30.03-17.52-41.37-28.87 -11.35-11.35-14.88-33.29-28.87-41.39 -13.76-7.97-34.62-.19-50.29-4.378 -15.27-4.08-29.27-21.35-45.77-21.35 -16.5 0-30.5 17.27-45.7 21.34 -15.8 4.2-36.6-3.6-50.32 4.37 -14.88 8.08-17.52 30.03-28.87 41.37 -11.34 11.35-33.29 14.88-41.38 28.87 -7.99 13.75-.18 34.55-4.38 50.25 -4.08 15.3-21.35 29.3-21.35 45.8 0 16.5 17.27 30.52 21.34 45.73 4.2 15.75-3.62 36.5 4.36 50.29 8.09 13.98 30.03 17.48 41.375 28.88 11.35 11.35 14.88 33.29 28.86 41.39 13.74 7.95 34.62.18 50.29 4.38 15.27 4.03 29.27 21.33 45.77 21.33 16.5 0 30.52-17.27 45.74-21.34 15.72-4.21 36.5 3.6 50.29-4.37 13.98-8.09 17.52-30.03 28.87-41.38 11.35-11.35 33.29-14.88 41.39-28.86 7.98-13.79.16-34.54 4.37-50.29 4.03-15.262 21.33-29.262 21.33-45.762Zm-52.3 37.5c-4.41 16.49-1.34 32.1-1.7 42.27 -7.86 4.96-23.64 10.38-35.78 22.52 -12.03 12.03-17.59 27.99-22.5 35.75 -9.2.41-25.54-2.78-42.28 1.7 -16.71 4.46-29.4 15.76-37.48 19.79 -8.03-4.01-20.8-15.34-37.48-19.79 -16.71-4.48-33.04-1.31-42.29-1.72 -4.9-7.83-10.4-23.63-22.49-35.73 -12.11-12.2-27.85-17.5-35.77-22.6 -.35-9.2 2.76-25.6-1.69-42.2 -4.47-16.71-15.77-29.39-19.8-37.48 3.99-8.03 15.33-20.77 19.8-37.5 4.43-16.6 1.33-32.88 1.69-42.27 7.85-4.98 23.64-10.37 35.78-22.52 12.07-12.05 17.57-28.01 22.473-35.78 9.19-.38 25.64 2.73 42.28-1.71 16.74-4.48 29.33-15.74 37.48-19.79 8.02 3.99 20.77 15.33 37.49 19.8 16.74 4.47 33.01 1.29 42.28 1.71 4.84 7.65 10.45 23.71 22.51 35.76 12.03 12.04 28 17.61 35.77 22.52 .35 9.27-2.76 25.64 1.69 42.28 4.46 16.71 15.77 29.38 19.79 37.47 -3.9 8-15.3 20.8-19.8 37.5Zm-28 170.2c-1.82-8.66-10.16-14.23-18.94-12.39 -8.625 1.79-14.19 10.27-12.38 18.92l17.47 73.84 -90.66-45.33c-4.5-2.25-9.82-2.25-14.31 0L96 481.46l15.69-75.23c1.81-8.66-3.75-17.12-12.38-18.92 -8.69-1.85-17.16 3.73-18.94 12.39l-15.69 75.25c-2.44 11.64 1.93 23.38 11.34 30.62 9.43 7.23 21.84 8.43 32.5 3.125l83.48-42.6 83.5 41.75c4.4 3.05 9.1 4.15 13.8 4.15 6.625 0 13.16-2.18 18.69-6.41 9.4-7.25 13.78-18.98 11.34-30.64l-15.63-75.26Z"/></svg>2016: <em>Heroes of Accessibility: Educational Effort</em> as part of W3C/WAI, awarded by Knowbility</li>
+            </ul>
+          </section>
+          <section aria-labelledby="writing-heading">
+              <h2 id="writing-heading">Writing</h2>
+              <ul id="writing">
+                <li id="writingloading">Loading</li>
+              </ul>
+            </section>
+    </main>
+    <script>
+      function addToList(html) {
+        document.querySelector('#writing').insertAdjacentHTML('beforeEnd', html);
+      }
+      fetch('https://yatil.net/feed/json')
+      .then(response => response.json())
+      .then(data => data.items.slice(0, 10).forEach(element => addToList(document.createElement('ul').innerHTML = '<li><a href="' + element.title + '">' + element.title + '</a></li>')))
+      .then(removeloading => document.querySelector('#writingloading').remove());
+    </script>
+  </body>
+</html>
