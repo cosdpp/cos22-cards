@@ -3,9 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>Mariia’s Card</title>
-    <style>
-      /* Styling */
-    </style>
+    <link rel="stylesheet" href="styles/Digital Publication.css"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style> 
+    /* Styling */
+    </style> 
   </head>
   </head>
   <body>
@@ -15,19 +19,53 @@
     <main>
       <section aria-labelledby="bio-heading">
         <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+        <p class="bio-comment">Enthusiastic IT Project Manager | Business Analyst with experience in PR and Communications . Mainly work with e-commerce Capgemini projects such as Jacuzzi, Kontoor Brands, Iceland, and Ralph Lauren.</p>
       </section>
       <section aria-labelledby="hobbies-heading">
         <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <ul>
+          <li>Brazilian Zouk Dancing</li>
+          <li>Photography</li>
+          <li>Travelling</li>
+          <li>Annoying people</li>
+        </ul>
       </section>
       <section aria-labelledby="workxp-heading">
         <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <!-- Work Position 1 -->
+        <div>
+          <h4>Project Manager & Business Analyst Speroteck Inc</h4>
+          <p>September 2019 - up to now | Remote</p>
+          <ul>
+            <li>Holistic Project Management.</li>
+            <li>Creating & managing project plans.</li>
+            <li>Conflict Management.</li>
+            <li>Defining project schedules, allocating resources and monitoring progress.</li>
+            <li>Agile/Scrum</li>
+          </ul>
+
+        </div>
       </section>
+      <!-- Sidebar -->
+      <aside>
+        
+
+      </aside>
     </main>
     <script>
       /* Scripting */
     </script>
   </body>
 </html>
+
+
+
+body {
+    background-color: white;
+    color: black;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bio-comment {
+    width: 600px;
+}
