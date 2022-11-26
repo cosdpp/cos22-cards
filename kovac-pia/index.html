@@ -1,39 +1,129 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Pia’s Card</title>
-    <style>
+<style>
       /* Styling */
+ 
+  html { 
+    scroll-behavior: smooth;
+    padding: 5vh 5vw;
+    font-family: 'Georgia';
+    color: #232b2e;
+    background-color: #efdccc;
+}   
+  
+  /*div {
+  column-count: 3;
+  column-gap: 30px;
+  column-rule: 1px solid #232b2e;
+}*/
+  
+  
+  h1 {
+    margin: auto; 
+    font-size: 4em;
+    text-align: center;
+    margin-bottom: 2vh;
+    width: 60vw;   
+    font-family: 'Trebuchet MS'; 
+}
+  
+  h2 {
+    font-size: 2em;
+    line-height: 2em;
+    font-family: 'Trebuchet MS';
+  }
+  
+    h3 {
+    font-size: 2em;
+  }
+  
+  a:link {
+    color: #726338;  
+  }
+  
+  a:visited {
+    color: #a18867;
+  }
+  
+#boxa: {grid-row: 1;grid-column:1;}
+#boxb: {grid-row: 1;grid-column:2;}
+#boxc: {grid-row: 1;grid-column:3;}
+  
+
+  div4 {
+    text-align: center;
+  }
+  
+  footer {
+    width: auto;
+    height: auto;
+    padding: 5vh; 
+    position: inherit;
+    color:#efdccc;
+    background-color:#a18867; 
+    text-align: center;
+}
+       
     </style>
-  </head>
-  </head>
-  <body>
+<body>
     <header>
-      <h1>What is this</h1>
+      <h1>What I ate today:</h1>
     </header>
     <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
+       
+      <div1>
+      <section aria-labelledby="breakfast-heading">
+        <h2 id="breakfast-heading">Breakfast</h2>
         
         <ul>
-          <li>Meat</>
-          <li>Potatoes</>
+          <li>Toast</li>
+          <li>Eggs</li>
+          <li>Sausages</li>
+          <li>Pickles</li>
         </ul>
         
-        <p>This is my favourite <a href="https://irepo.primecp.com/2015/08/233655/Moms-Meat-and-Potatoes_ExtraLarge1000_ID-1155426.jpg?v=1155426">lunch.</a></p>
+        <p> The everyday classic.
+        </p>
       </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+      </div1>
+      
+      
+      <div2>
+      <section aria-labelledby="lunch-heading">
+        <h2 id="lunch-heading">Lunch</h2>
+        I skipped my lunch today as I didn't have time to eat it.<br> I was too busy building <a href="https://github.com/cosdpp/cos22-cards/edit/main/kovac-pia/index.html"> this </a> website.
       </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+      </div2>
+      
+      
+      <div3>
+      <section aria-labelledby="dinner-heading">
+        <h2 id="dinner-heading">Dinner</h2>
+
+        <ul>
+          <li>Turkey</li>
+          <li>Rice</li>
+          <li>Pomergranate</li>
+          <li>Mushrooms</li>
+          <li>Herbs</li>
+        </ul>
+        
+         For dinner I had this wonderful looking turkey roulade filled with delicious pomergranate-mushroom filling. It was <b>amazing</b>.
+        
       </section>
+      </div3>
+      
+       <div4>
+            <section aria-labelledby="everything-heading">
+        <h3 id="everything-heading">Everything in between</h3>
+
+      </section>
+        </div4>
+      
     </main>
     <script>
       /* Scripting */
     </script>
   </body>
+<footer>
+  I really enjoyed my today's food.
+</footer>  
 </html>
