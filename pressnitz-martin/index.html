@@ -9,7 +9,9 @@
       body {
     background-color: lightgrey; 
     color: black;
-         font-family: sans-serif;
+        
+        font-family: 'Helvetica';
+        font-family: sans-serif;
         max-width: 600px;
         border: 10px solid #000;
         margin: 20px auto;
@@ -19,10 +21,23 @@
       }
     </style>
   </head>
-  </head>
   <body>
     <header>
       <h1>Martin Pressnitz</h1>
+       background: rgb(255, 255, 255);
+        overflow: hidden;
+        font-family: "Segoe UI", sans-serif;
+      }
+
+      p {
+        line-height: 14px;
+        background: <img src="Martin_Pressnitz_Weinberg.JPG" alt="Martin Pressnitz am Weinberg" style="width:500px;height:600px;">
+        background-repeat: no-repeat;
+        background-size: 80vh;
+        background-position: center;
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: rgba(0, 0, 0, 0);
     </header>
     <main>
       <section aria-labelledby="bio-heading">
@@ -45,7 +60,7 @@
         <h2 id="hobbies-heading">Pets</h2>
         Since almost two years my family has an adorable cat called Wilson. Still not shure if he is a wild cat or domesticated.
         <img src="cat.JPG" alt="cat on table">
-         <source media="(min-width: 300px)" srcset="cat.JPG">
+        <source media="(min-width: 300px)" srcset="cat.JPG">
       </section>
     </main>
     <script>
@@ -53,5 +68,4 @@
     </script>
   </body>
 </html>
-
 
