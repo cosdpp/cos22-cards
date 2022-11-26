@@ -37,10 +37,13 @@
         max-width: 50px;
         padding: 5px;
       }
-      #hobbies {
-        list-style: none;
+      .cardimage {
+        max-width: 200px
+      }
+      .card {
         display: flex;
-        gap: 10px;
+        justify-content: space-between;
+        align-items: center;
       }
       a:link {
         font-color: #4c4a4a;
@@ -66,22 +69,22 @@
         She was born in Rome, Italy, and lived there until she moved away to attend University in Udine. </br>
         In 2012, she landed in Austria and never left. Now she lives in Leibnitz with her husband and their dog, Kiwi.</p>
       </section>
-      <section aria-labelledby="hobbies-heading">
+      <section aria-labelledby="hobbies-heading" class="hobbies">
         <h2 id="hobbies-heading">Hobbies</h2>
         <div class="card">
-          <img src="placeholder-image-square.jpg">
+          <img src="placeholder-image-square.jpg" class="cardimage">
           <h3>Sewing</h3>
         </div>
         <div class="card">
-          <img src="placeholder-image-square.jpg">
+          <img src="placeholder-image-square.jpg" class="cardimage">
           <h3>Knitting</h3>
         </div>
         <div class="card">
-          <img src="placeholder-image-square.jpg">
+          <img src="placeholder-image-square.jpg" class="cardimage">
           <h3>Reading</h3>
         </div>
         <div class="card">
-          <img src="placeholder-image-square.jpg">
+          <img src="placeholder-image-square.jpg" class="cardimage">
           <h3>Cooking</h3>
         </div>
         <ul id="hobbies">
