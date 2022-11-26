@@ -2,28 +2,68 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
+    <title>Ben’s Card</title>
     <style>
-      /* Styling */
+      body {
+        background-color: #F3FAFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      /* Header */
+      .fancy {
+        font-family: Helvetica;
+        font-size: 50px;
+        font-weight: bold;
+        color: #333333;
+        text-align: center;
+      }
+      .littlefancy {
+        font-family: Helvetica;
+        font-size: 26px;
+        font-weight: normal;
+        color: #333333;
+      }
+      .notfancy {
+        font-family: Helvetica;
+        font-size: 14px;
+        font-weight: normal;
+        color: #888888;
+        background-color: white;
+        padding: 20px;
+        width: 40VW;
+      }
     </style>
   </head>
   </head>
-  <body>
+  <body align="middle">
     <header>
-      <h1>@@MyName</h1>
+      <img src="profile.png" alt="Ben's Profile" style="width:15VW">
+      <h1 class="fancy">Ben Bredl</h1>
     </header>
     <main>
       <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+        <h2 class= "littlefancy" id="bio-heading">Bio</h2>
+        <div class="notfancy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
       </section>
+
       <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+        <h2 class= "littlefancy" id="hobbies-heading">Hobbies</h2>
+        <div class="notfancy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
       </section>
       <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+        <h2 class= "littlefancy" id="workxp-heading">Work Experience</h2>
+        <div class="notfancy">
+        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
+        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+      </div>
       </section>
     </main>
     <script>
