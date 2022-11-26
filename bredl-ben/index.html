@@ -16,6 +16,7 @@
       }
     }
     body {
+      min-height: 100VH;
       animation-duration: 1s;
       animation-timing-function: ease-out;
       animation-delay: 0s;
@@ -28,7 +29,6 @@
       align-items: center;
       justify-content: center;
       }
-
 /*Text Styles */
       .fancy {
         font-size: 30px;
@@ -42,6 +42,12 @@
         font-weight: 100;
         color: #004563;
       }
+      .notfancy {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        color: #004563;
+      }
       .fancyTextBox {
         font-size: 14px;
         font-weight: normal;
@@ -53,15 +59,19 @@
         padding-left: 60px;
         padding-right: 60px;
         width: 60VW;
-        max-width: 600px;
+        max-width: 500px;
         border-radius: 10px;
         margin-bottom: 35px;
       }
-      .notfancy {
-        font-size: 14px;
-        font-weight: normal;
-        font-style: italic;
-        color: #004563;
+/* Video Player */
+      .videoPlayer {
+        width: 60VW;
+        max-width: 500px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        margin-bottom: 35px;
+        overflow: hidden;
+        background-color: black;
       }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -75,9 +85,14 @@
     <main>
       <section aria-labelledby="bio-heading">
         <h2 class= "littlefancy" id="bio-heading">Bio</h2>
-        <div class="fancyTextBox">
-        <p>I’m Ben. I’m self-employed living in Vienna. About ten years ago I started a company that helps brands to communicate through video. Well, actually the company was born out of a hobby, when me and a good friend picked up and started playing around with it. Today everything has become a bit more professional and we create content for companies big and small.</p>
-      </div>
+          <div class="fancyTextBox" style="margin-bottom: 0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;">
+          <p>I’m Ben. I’m self-employed living in Vienna. About ten years ago I started a company that helps brands to communicate through video. Well, actually the company was born out of a hobby, when me and a good friend picked up and started playing around with it. Today everything has become a bit more professional and we create content for companies big and small.</p>
+          </div>
+          <div class="videoPlayer">
+              <video loop="" style="background-image:url('hero_reel-poster.jpg');width:100%" muted="" autoplay="true">
+                <source src="hero_reel.webm">
+              </video>
+          </div>
       </section>
 
       <section aria-labelledby="hobbies-heading">
