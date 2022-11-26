@@ -2,72 +2,104 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
     <title>Ben’s Card</title>
     <style>
-      body {
-        background-color: #F3FAFF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    @keyframes slideIn {
+      0% {
+        transform: translateY(-100%);
+        opacity: 0%;
       }
-      /* Header */
+      100% {
+        transform: translateY(0);
+        opacity: 100%;
+      }
+    }
+    body {
+      animation-duration: 1s;
+      animation-timing-function: ease-out;
+      animation-delay: 0s;
+      animation-name: slideIn;
+
+      font-family: "Open Sans", sans-serif;
+      background-color: #EBF7FF;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      }
+
+/*Text Styles */
       .fancy {
-        font-family: Helvetica;
-        font-size: 50px;
-        font-weight: bold;
-        color: #333333;
+        font-size: 30px;
+        font-weight: 900;
+        color: #004563;
         text-align: center;
+        margin-bottom: 8px;
       }
       .littlefancy {
-        font-family: Helvetica;
-        font-size: 26px;
-        font-weight: normal;
-        color: #333333;
+        font-size: 16px;
+        font-weight: 100;
+        color: #004563;
       }
-      .notfancy {
-        font-family: Helvetica;
+      .fancyTextBox {
         font-size: 14px;
         font-weight: normal;
-        color: #888888;
+        text-align: justify;
+        line-height: 20px;
+        color: #004563;
         background-color: white;
         padding: 20px;
-        width: 40VW;
+        padding-left: 60px;
+        padding-right: 60px;
+        width: 60VW;
+        max-width: 600px;
+        border-radius: 10px;
+        margin-bottom: 35px;
+      }
+      .notfancy {
+        font-size: 14px;
+        font-weight: normal;
+        font-style: italic;
+        color: #004563;
       }
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
   </head>
-  <body align="middle">
+  <body align="middle" id="fancyAnimation">
     <header>
-      <img src="profile.png" alt="Ben's Profile" style="width:15VW">
-      <h1 class="fancy">Ben Bredl</h1>
+      <img src="profile.png" alt="Ben's Profile" style="width:25VW;max-width:200px">
+      <h1 class="fancy">Ben Bredl<span class="notfancy">, Videoproducer</span></h1>
     </header>
     <main>
       <section aria-labelledby="bio-heading">
         <h2 class= "littlefancy" id="bio-heading">Bio</h2>
-        <div class="notfancy">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <div class="fancyTextBox">
+        <p>I’m Ben. I’m self-employed living in Vienna. About ten years ago I started a company that helps brands to communicate through video. Well, actually the company was born out of a hobby, when me and a good friend picked up anand started playing around with it. Today everything has become a bit more professional and we create content for companies big and small.</p>
       </div>
       </section>
 
       <section aria-labelledby="hobbies-heading">
         <h2 class= "littlefancy" id="hobbies-heading">Hobbies</h2>
-        <div class="notfancy">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <div class="fancyTextBox">
+          <p>Well, here are my hobbies:</p>
+          <ul>
+            <li>Basketball</li>
+            <li>Photography</li>
+            <li>Cooking</li>
+            <li>Hiking</li>
+          </ul>
       </div>
       </section>
       <section aria-labelledby="workxp-heading">
         <h2 class= "littlefancy" id="workxp-heading">Work Experience</h2>
-        <div class="notfancy">
-        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</p>
-        <p>Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+        <div class="fancyTextBox">
+        <p>I am a creative filmmaker with more than nine years of experience in various areas of video production. In the past years I have managed the production process for 200+ projects projects from conceptualizing the concepts, to shooting and editing. What came out of it, can be seen on my portfolio: benbredl.com</p>
       </div>
       </section>
     </main>
     <script>
-      /* Scripting */
     </script>
   </body>
 </html>
