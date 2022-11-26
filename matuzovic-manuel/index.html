@@ -5,17 +5,25 @@
     <title>Manuel's online business card</title>
     <style>
       body {
-        font-family: sans-serif;
+        font-family: ARial;
         max-width: 600px;
         border: 10px solid #000;
         margin: 20px auto;
-        padding: 20px;
         font-size: 20px;
         line-height: 1.5;
       }
 
+      header,
+      main {
+        padding: 20px;
+      }
+
       h1 {
         margin-top: 0;
+      }
+
+      h2 span {
+        border-bottom: 6px solid #000;
       }
 
       ul {
@@ -24,6 +32,51 @@
         padding: 0;
         display: flex;
         gap: 10px;
+      }
+
+      iframe {
+        max-width: 100%;
+      }
+
+      a:link {
+        color: #aa1df9;
+      }
+      
+      nav a:link {
+        font-size: 24px;
+        text-decoration: none;
+      }
+
+      nav a:hover {
+        text-decoration: underline;
+      }
+
+      header {
+        background-color: #000;
+        color: #fff;
+      }
+
+
+      a:link {
+        color: red
+      }
+
+      a:visited {
+        color: green;
+      }
+
+      a:hover {
+        color: orange;
+        text-decoration: none;
+      }
+
+      .images {
+        display: flex;
+        gap: 10px;
+      }
+
+      img {
+        width: 50%;
       }
     </style>
   </head>
@@ -44,8 +97,19 @@
       </nav>
     </header>
     <main>
+
+    
+
+      <!-- <img src="" alt=“soap” -->
       <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
+        <h2 id="bio-heading"><span>Bio</span></h2>
+
+        <div class="images">
+          <img src="image.jpg" alt="">
+          <img src="image.jpg" alt="">
+        </div>
+
+        <p>the guy kept talking about “soap”</p>
         <p>My name is Manuel Matuzovic. I'm a professional web developer since 2008 and a freelancer since 2010. I work for the City of Vienna, where I'm responsible for the frontend of wien.gv.at.
           I'm specialized in HTML, accessibility, and CSS layout and architecture.</p>
         <p>
@@ -53,11 +117,16 @@
         </p>
       </section>
       <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
+        <h2 id="hobbies-heading"><span>Hobbies</span></h2>
         <p>Soap, soap, soap, nothing but soap.</p>
+
+        <p>…and music.</p>
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PHzOOQfhPFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
       </section>
       <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
+        <h2 id="workxp-heading"><span>Work Experience</span></h2>
         <ol>
           <li>
             <strong>since 2019</strong>
