@@ -12,59 +12,424 @@
     <style> 
       
     body {
-    background-color: white;
-    color: black;
     font-family: 'Montserrat', sans-serif;
+    background-color: #E5E5E5;
 }
-    .bio-comment {
-    width: 600px;
+
+/* main styles */
+
+.main {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-content {
+    background-color: #fff;
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+    padding: 105px 90px;
+}
+
+/* about styles */
+
+.about {
+    margin-bottom: 40px;
+}
+
+.about-position {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about-name {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 55px;
+    color: #000000;   
+    margin-bottom: 25px; 
+}
+
+.about-description {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+    width: 400px;
+}
+
+/* project styles */
+
+.projects {
+    margin-bottom: 50px;
+}
+
+.title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.projects-list {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.project-item {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.project,
+.project-link 
+{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+.project-link {
+    margin-left: 10px;
+}
+
+.project-bracket {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+}
+
+/* work styles */
+
+.work {
+
+}
+
+.work2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.work-position {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.organization
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+}
+
+.period {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #A8A8A8;
+    margin-bottom: 10px;
+}
+
+.line {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #000000;
+}
+
+.work-list {
+    padding: 0;
+    margin-left: 15px;
+}
+
+.work-list-item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #595959;
+}
+
+/* education styles */
+
+.education {
+    margin-top: 45px;
+}
+
+.university 
+{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FB6D3A;
+    margin-bottom: 10px;
+}
+
+.faculty {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+/* sidebar styles */
+
+.sidebar {
+    background-color: #1E2939;
+    padding-top: 40px;
+    width: 370px;
+}
+
+.photo {
+    width: 370px;
+    margin-bottom: 50px;
+}
+
+.contacts, 
+.tech-skills,
+.soft-skills,
+.hobbies,
+{
+    margin-left: 40px;
+}
+
+.contacts {
+    margin-bottom: 50px;
+}
+
+.tech-skills {
+    margin-bottom: 45px;
+}
+      
+.soft-skills {
+  margin-bottom: 45px;
+      }
+
+.sidebar-title {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.contact-type {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-right: 5px;
+}
+
+.contact-link {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* color: #565F6B; */
+    color: #FFFFFF;
+    opacity: 0.5;
+}
+
+.tech-skills-list, 
+.soft-skills-list
+{
+    color: #FFFFFF;
+    padding: 0;
+    margin-left: 17px;
+}
+
+.tech-skills-item,
+.soft-skills-item,
+.hobbies-item,
+ {
+    color: #FB6D3A;
+}
+
+.tech-skills-text,
+.soft-skills-text.
+.hobbies-item,
+      {
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
 }
       
     </style> 
+
   </head>
   </head>
   <body>
     
 
-    <header>
-      <h1>Mariia Stronska</h1>
-    </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p class="bio-comment">Enthusiastic IT Project Manager | Business Analyst with experience in PR and Communications . Mainly work with e-commerce Capgemini projects such as Jacuzzi, Kontoor Brands, Iceland, and Ralph Lauren.</p>
-        
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        <ul>
-          <li>Brazilian Zouk Dancing</li>
-          <li>Photography</li>
-          <li>Travelling</li>
-          <li>Annoying people</li>
-        </ul>
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        <!-- Work Position 1 -->
-        <div>
-          <h4>Project Manager & Business Analyst Speroteck Inc</h4>
-          <p>September 2019 - up to now | Remote</p>
-          <ul>
-            <li>Holistic Project Management.</li>
-            <li>Creating & managing project plans.</li>
-            <li>Conflict Management.</li>
-            <li>Defining project schedules, allocating resources and monitoring progress.</li>
-            <li>Agile/Scrum</li>
-          </ul>
+   <!--Main-->
+<div class="main">
+    <!--Main Content-->
+    <div class="main-content">
+        <!--About User-->
+        <div class="about">
+            <h2 class="about-position">Project Manager & Business Analyst</h2>
+            <h1 class="about-name">Maria Stronska</h1>
+            <p class="about-description">
+                Enthusiastic Project Manager <span class="line">|</span> Enthusiastic IT Project Manager | Business Analyst with experience in PR and Communications . Mainly work with e-commerce Capgemini projects such as Jacuzzi, Kontoor Brands, Iceland, and Ralph Lauren. 
+            </p>
+        </div>
+        <!--Projects-->
+        <div class="projects">
+            <h3 class="title">Projects</h3>
+
+            <ol class="projects-list">
+                <li class="project-item">
+                    <span class="project">
+                        <a href="https://www.jacuzzi.com/en-us/" class="project-link">Jacuzzi</a>
+                        ................................................................. 
+                        <span class="project-bracket">[</span> SFCC <span class="project-bracket">]</span>
+                    </span>
+                </li>
+                <li class="project-item">
+                    <span class="project">
+                        <a href="https://www.kontoorbrands.com/" class="project-link">Kontoorbrands</a>
+                        ................................................
+                        <span class="project-bracket">[</span> SFCC <span class="project-bracket">]</span>
+                    </span>
+                </li>
+                <li class="project-item">
+                    <span class="project">
+                        <a href="https://www.ralphlauren.eu/at/de" class="project-link">Ralph Lauren</a>
+                        .................................................... 
+                        <span class="project-bracket">[</span> SFCC <span class="project-bracket">]</span>
+                    </span>
+                </li>
+            </ol>
 
         </div>
-      </section>
-      <!-- Sidebar -->
-      <aside>
-        
+        <!--Work-->
+        <div class="work">
+            <h3 class="title">Work Experience</h3>
+            <!--Company 1-->
+            <div>
+                <h4 class="work-position">Project Manager & Business Analyst <span class="organization">Speroteck Inc</span></h4>
+                <p class="period">September 2019 - up to now  <span class="line">|</span>   Remote</p>
+                <ul class="work-list">
+                    <li class="work-list-item">Holistic Project Management.</li>
+                    <li class="work-list-item">Creating & managing project plans.</li>
+                    <li class="work-list-item">Conflict Management. </li>
+                    <li class="work-list-item">Defining project schedules, allocating resources and monitoring progress. </li>
+                    <li class="work-list-item">Reports forming, tracking and updating the project's documentation. </li>
+                    <li class="work-list-item">Agile/Scrum. </li>
+                </ul>
+            </div>
+            <!--Company 2-->
+            <div class="work2">
+                <h4 class="work-position">Project Manager <span class="organization"> AtomPark Software </span></h4>
+                <p class="period">May 2016 - September 2019  <span class="line">|</span>   Ukraine</p>
+                <ul class="work-list">
+                    <li class="work-list-item">Creating & managing project plans. </li>
+                    <li class="work-list-item">Defining project schedules, allocating resources and monitoring progress.</li>
+                    <li class="work-list-item">Agile/Scrum. </li>
+                </ul>
+            </div>
+            <!--Company 3-->
+            <div>
+                <h4 class="work-position">Project Manager <span class="organization">Verein Europa und Bildung | ESC</span></h4>
+                <p class="period">May 2021 - April 2022   <span class="line">|</span>   Austria</p>
+                <ul class="work-list">
+                    <li class="work-list-item">Project management (Erasmus+ projects).  </li>
+                    <li class="work-list-item">Communications.</li>
+                    <li class="work-list-item">Research and consulting. </li>
+                </ul>
+            </div>
+        </div>
+        <!--Education-->
+        <div class="education">
+            <h3 class="title">Education</h3>
+            <!--Place of study-->
+            <h4 class="university"> Chernihiv National University of Technology </h4>
+            <!--Faculty-->
+            <h4 class="faculty">Master of Arts - MA, Social Work</h4>
+            <p class="period">September 2015 - January 2017   <span class="line">|</span>   Ukraine</p>
+        </div>
+    </div>
+    <!--Sidebar-->
+    <aside class="sidebar">
+        <img src="img/foto_Mariia Stronska.jpg" alt="User Photo" class="photo"> 
+        <!--Contacts-->
+        <div class="contacts">
+            <h3 class="sidebar-title">Contacts</h3>
+            <div>
+                <p>
+                    <span class="contact-type">C:</span>
+                    <a href="tel:+380938318288" class="contact-link">+38 093 831 8288</a>
+                </p>
+                <p>
+                    <span class="contact-type">E:</span> 
+                    <a href="mailto:mstronska55@gmail.com" class="contact-link">mstronska55@gmail.com
+                    </a>
+                </p>
+            </div>
+        </div>
+        <!--Tech Skills-->
+        <div class="tech-skills">
+            <h3 class="sidebar-title">Tech Skills</h3>
+            <ul class="tech-skills-list">
+                <li class="tech-skills-item"> <span class="tech-skills-text">HTML5</span></li>
+                <li class="tech-skills-item"> <span class="tech-skills-text">CSS3</span></li>
+                <li class="tech-skills-item"> <span class="tech-skills-text">GIT</span></li>
+            </ul>    
+        </div>
+        <!--Soft Skills-->
+        <div class="soft-skills">
+            <h3 class="sidebar-title">Soft Skills</h3>
+            <ul class="soft-skills-list">
+                <li class="soft-skills-item"> <span class="soft-skills-text">Scrum</span></li>
+                <li class="soft-skills-item"> <span class="soft-skills-text">Agile</span></li>
+                <li class="soft-skills-item"> <span class="soft-skills-text">GTD</span></li>
+                <li class="soft-skills-item"> <span class="soft-skills-text">Teamwork</span></li>
+            </ul>
+        </div>
+      
+        <!--     Hobbies   -->
+        <div class="hobbies">
+            <h3 class="sidebar-title">Hobbies</h3>
+            <ul class="soft-skills-list">
+                <li class="hobbies-item"> <span class="hobbies-text">Brazilian Zouk Dancing</li>
+                <li class="hobbies-item"> <span class="hobbies-text">Photography</li>
+                <li class="hobbies-item"> <span class="hobbies-text">Travelling</li>
+                <li class="hobbies-item"> <span class="hobbies-text">Annoying people</li>
+            </ul>
+    </aside>
 
-      </aside>
+</div>
     </main>
     <script>
       /* Scripting */
