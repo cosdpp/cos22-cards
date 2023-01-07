@@ -7,6 +7,38 @@
   background-color: #FFF0F5; /* pale lavender */
   border-color: #E6E6FA; /* lavender */
 }
+      /* Style the social media wall container */
+#social-wall {
+  display: flex; /* Display the post blocks in a row */
+  flex-wrap: wrap; /* Wrap the post blocks to the next line if necessary */
+  justify-content: space-between; /* Add space between the post blocks */
+}
+
+/* Style the individual social media post blocks */
+.post {
+  width: 30%; /* Set the width of each post block to 30% of the container */
+  margin-bottom: 20px; /* Add space between the post blocks */
+  background-color: #fff; /* Set the background color to white */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+  border-radius: 5px; /* Round the corners of the post block */
+}
+
+/* Style the social media icon */
+.icon {
+  width: 50px; /* Set the width of the icon container */
+  height: 50px; /* Set the height of the icon container */
+  background-color: #333; /* Set the background color to dark grey */
+  border-radius: 50%; /* Round the corners of the icon container */
+  font-size: 24px; /* Set the font size of the icon */
+  color: #fff; /* Set the color of the icon to white */
+  text-align: center; /* Center the icon within the container */
+  line-height: 50px; /* Vertically center the icon within the container */
+}
+
+/* Style the post content */
+.content {
+  padding: 10px; /* Add padding to the post content */
+}
        </style>
     <title>My Personal Website</title>
   </head>
@@ -45,4 +77,29 @@
       </section>
       <section id="contact">
         <h2 class="trendy">Contact</h2>
+        
+        <!-- Create a container for the social media wall -->
+<div id="social-wall">
+  <!-- Add individual blocks for each social media post -->
+  <div class="post">
+    <!-- Add the social media icon -->
+    <div class="icon">
+      <i class="fa fa-twitter"></i>
+    </div>
+    <!-- Add the post content -->
+    <div class="content">
+      <p>This is a sample tweet</p>
+    </div>
+  </div>
+  <div class="post">
+    <div class="icon">
+      <i class="fa fa-instagram"></i>
+    </div>
+    <div class="content">
+      <p>This is a sample Instagram post</p>
+    </div>
+  </div>
+  <!-- Add more social media post blocks as needed -->
+</div>
+
         <!-- insert contact information here -->
