@@ -1,82 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>@@MyName@@’s Card</title>
-    <style>
-      body {
-      background-color: grey; 
-      color: white;
+<html>
+<head lang="en">
+<meta charset="UTF-8">
+
+<style type="text/css">
+
+@font-face {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 900;
+	src: url('Kanit-Black.ttf');
+}
+@font-face {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 300;
+	src: url('Kanit-Light.ttf');
+}
+@font-face {
+	font-family: 'Kanit', sans-serif;
+	font-weight: 100;
+	src: url('Kanit-Thin.ttf');
 }
 
-.bio {
-  text-align: center;
-  border: 3px  solid #17a589 ;
+body {
+	margin: 0;
+	font-size: 1rem;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	background: rgb(238,174,202);
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+	background-attachment: fixed;
 }
 
-      /* Styling */
-    </style>
-  </head>
-  </head>
-  <body>
-    <header>
-      <h1>Martin Schönbauer</h1>
-    </header>
-    <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
+section.fullwidth {
+	width: 100%;
+	display: block;
+	color: white;
+	padding: 25px;
+	margin: auto;
+	min-height: 100vh;
+}
+section:first-of-type {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+section:nth-child(n+2) {
+	position: relative;
+	top: 100vh;
+	background: white;
+	color: #303030;
+	box-shadow: 0 0 150px rgba(0,0,0,.25);
+}
+section .col-6 {
+	width: 48%;
+	margin: 0 1%;
+	float: left;
+}
 
-  <div class="bio">
-         
-        <p>I´m a 35 year old visual artist, a creative mind and a professional, always waiting for the perfect moment to            capture. For me photography is a language more universal than words. </p>
+h1 {
+	font-size: 14rem;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 900;
+	line-height: 1;
+}
+h2 {
+	font-size: 6rem;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 900;
+	line-height: 1.1;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+h3 {
+	font-size: 4rem;
+	font-family: 'Kanit', sans-serif;
+	font-weight: 300;
+	line-height: 1.1;
+}
+.scroll-indicator {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	transform: rotate(-90deg);
+	position: fixed;
+	left: 0px;
+	bottom: 250px;
+	letter-spacing: 2px;
+	font-family: 'Kanit';
+}
+.scroll-indicator:before {
+	position: absolute;
+	content: '<';
+	font-size: 4rem;
+	font-weight: 300;
+	left: -50px;
+    top: -33px;
+}
+.website-style {
+	margin: 50px 0 50px 25px;
+	border-top: 1px solid rgba(0,0,0,.5);
+	border-bottom: 1px solid rgba(0,0,0,.5);
+	padding: 25px 0;
+	display: inline-block;
+	width: auto;
+}
+
+img {
+	width: 100%;
+	max-width: 500px;
+	float: right;
+	margin: 0 55px 0 0;
+}
+p {
+	width: 100%;
+	max-width: 1050px;
+	font-size: 1.5rem;
+	font-weight: 100;
+	font-family: 'Kanit';
+	margin-left: 100px;
+}
+blockquote {
+	font-size: 2rem;
+	margin: 50px 0 0 175px;
+	display: block;
+	text-transform: uppercase;
+	font-weight: 300;
+	max-width: 750px;
+}
+figcaption {
+	margin: 25px 0 50px 175px;
+	font-weight: 100;
+	max-width: 750px;
+}
+</style>
+
+<title>Martin Schönbauer</title>
+</head>
+
+<body>
+
+	<section class="fullwidth">
+		
+		<div class="section-header">
+			<h1>Hi, I'm Martin Schönbauer</h1>
+		</div>
+
+		<div class="scroll-indicator">
+			Scroll for more
+		</div>
+		
+	</section>
+	
+	<section class="fullwidth">
+		
+		<div class="sectionheader">
+			<h2>About me</h2>
+		</div>
 
 
-          <p>I love to work with people but don´t let my passion for black and white portrait photography fool you; my              work is diversified and multifarious.</p>
+		<div class="content">
+			<img src="martin-schoenbauer_portrait.jpg">
 
-
-          <p> <q>Look and think before opening the shutter. The heart and mind are the true lens of the camera.“ – Yousuf              Karsh </q></p>
-
-          <p>I am open to any kind of commercial work which fits my style. </p>
-
-
-          <p>Interested? Feel free to <a href="mailto:office@martinschoenbauer.com"> contact</a> me.</p>
-
-        </div>
-
-
-
-      </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        <ul>
-          <li>photography</li>
-          <li>travel</li>
-          <li>movies</li>
-          <li>drones</li>
-        </ul>
-      </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
-      </section>
-
-      <section aria-labelledby="example photography work">
-        <h2 id="example photography work">Photography work</h2>
-
-        <!-- <img class="avatar" src="ericeggert.jpg" alt="Eric’s Avatar: He, a white man with a metal t-shirt, stands in              front of a blue police box. It is the TARDIS from Doctor Who."> -->
-        
-      </section>
-    </main>
-    <script>
-      /* Scripting */
-    </script>
-  </body>
-
-<footer>
-  <p> Martin Schönbauer Photography <a href="tel: 06641307355“> <img scr="phone-icon.png" width="20">06641307355 </a> </p>
-  
-  
-</footer>
+			<p>
+				I´m a 35 year old visual artist, a creative mind and a professional, always waiting for the perfect moment to capture. For me photography is a language more universal than words.
+			</p>
+			<p>
+				I love to work with people but don´t let my passion for black and white portrait photography fool you; my work is diversified and multifarious.
+			</p>
+			<blockquote>
+				„Look and think before opening the shutter. The heart and mind are the true lens of the camera.“
+			</blockquote>
+			<figcaption>Yousuf Karsh</figcaption>
+			<p>
+				I am open to any kind of commercial work which fits my style.
+			</p>	 
+			<p>
+				Interested? Feel free to <a href="mailto:office@martinschoenbauer.com?subject=Contact via Website">contact me</a>.
+			</p>
+			<p class="website-style">
+				You can also checkout my website <br><a href="https://www.martinschoenbauer.com" target="_blank">www.martinschoenbauer.com</a>
+			</p>
+		</div>		
+		
+	</section>
+	
+</body>
 
 </html>
 
