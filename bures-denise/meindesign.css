@@ -1,8 +1,8 @@
 body 
 	{
-		background-color:#d6c8b9;
-		font-family: 'Hahmlet', sans-serif;
-		width: 100%;
+	background-color:#d6c8b9;
+	font-family: 'Hahmlet', sans-serif;
+	width: 100%;
 	}
 
 h1  {
@@ -47,6 +47,7 @@ p {
 		padding-bottom: 200px;
 		padding-bottom: 200px;
 		background-image: url(bures-denise/Wald.jpeg);
+		background-position: center;
 		background-size: 300%;
 		background-repeat: no-repeat;
 	}
