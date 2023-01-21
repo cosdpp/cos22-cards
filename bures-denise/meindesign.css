@@ -7,7 +7,7 @@ body
 	}
 
 h1  {
-	color: #45FFCE;
+	color: #ffa847;
 	font-family: 'Italiana';
 	font-style: italic;
 	font-size: 3.5rem;
@@ -15,13 +15,14 @@ h1  {
 
 	}
 h2   {
-	color: #45FFCE;
+	color: #9a9289;
 	font-family: 'Italiana';
 	font-style: italic;
 	font-size: 2rem;
 
 	}
-h3   {color: #9a9289;
+h3   {
+	color: #9a9289;
 	font-size: 2rem;
 	}
 
