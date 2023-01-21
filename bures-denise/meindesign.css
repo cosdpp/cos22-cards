@@ -14,14 +14,16 @@ h1  {
 
 	}
 h2   {
-	color: #9a9289;
+	color: white;
 	font-family: 'Hahmlet';
 	font-style: italic;
 	font-size: 2rem;
 
 	}
 h3   {
-	color: #9a9289;
+	color: white;
+	font-family: 'Hahmlet';
+	font-style: thin;
 	font-size: 2rem;
 	}
 
@@ -32,7 +34,7 @@ a {
 p {
   color: white;
   font-family: 'Hahmlet';
-  font-style: italic;
+  font-style: thin;
   font-size: 1.2rem;
 }
 
@@ -53,7 +55,7 @@ p {
 	{
 		margin-left: 30%;
 		margin-right: 30%;
-		margin-top: 100px;
+		margin-top: 20px;
 		margin-bottom: 100px;
 		
 		background-color:#ffa847;
