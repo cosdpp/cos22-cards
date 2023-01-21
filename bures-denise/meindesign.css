@@ -8,7 +8,7 @@ body
 
 h1  {
 	color: #ffa847;
-	font-family: 'Italiana';
+	font-family: 'Hahmlet';
 	font-style: italic;
 	font-size: 3.5rem;
 	
@@ -16,7 +16,7 @@ h1  {
 	}
 h2   {
 	color: #9a9289;
-	font-family: 'Italiana';
+	font-family: 'Hahmlet';
 	font-style: italic;
 	font-size: 2rem;
 
@@ -31,7 +31,9 @@ a {
 }
 
 p {
-  color: #9a9289;
+  color: #ffa847;
+  font-family: 'Hahmlet';
+  font-style: italic;
   font-size: 1.2rem;
 }
 
@@ -43,6 +45,7 @@ p {
 		margin-bottom: 50px;
 		padding-bottom: 200px;
 		padding-bottom: 200px;
+		background-image: url(bures-denise/Wald.jpeg);
 		background-size: 100%;
 		background-repeat: no-repeat;
 	}
