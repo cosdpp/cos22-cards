@@ -2,7 +2,6 @@ body
 	{
 		background-color:#d6c8b9;
 		font-family: 'Hahmlet', sans-serif;
-		
 		width: 100%;
 	}
 
@@ -31,7 +30,7 @@ a {
 }
 
 p {
-  color: #ffa847;
+  color: white;
   font-family: 'Hahmlet';
   font-style: italic;
   font-size: 1.2rem;
@@ -52,8 +51,8 @@ p {
 	
 #main
 	{
-		margin-left: 10%;
-		margin-right: 10%;
+		margin-left: 20%;
+		margin-right: 20%;
 		margin-top: 50px;
 		margin-bottom: 100px;
 		
