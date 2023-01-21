@@ -27,8 +27,12 @@ h3   {
 	font-size: 2rem;
 	}
 
-a {
+h {
   color: #ffa847;
+}
+
+a {
+  color: white;
 }
 
 p {
@@ -47,7 +51,7 @@ p {
 		padding-bottom: 200px;
 		padding-bottom: 200px;
 		background-image: url(bures-denise/Wald.jpeg);
-		background-position: center;
+		background-position: margin;
 		background-size: 300%;
 		background-repeat: no-repeat;
 	}
@@ -57,7 +61,7 @@ p {
 		margin-left: 30%;
 		margin-right: 30%;
 		margin-top: 20px;
-		margin-bottom: 200px;
+		margin-bottom: 300px;
 		
 		background-color:#ffa847;
 		color: white;
