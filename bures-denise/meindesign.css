@@ -146,10 +146,8 @@ p {
 		margin-bottom: 50px;
 		padding-bottom: 200px;
 		padding-bottom: 200px;
-		background-image: url(bures-denise/Wald.jpeg);
-
 		
-		background-position: right;
+		background-image: url(bures-denise/Wald.jpeg);
 		background-size: 100%;
 		background-repeat: no-repeat;
 	
@@ -158,9 +156,9 @@ p {
 	
 #main
 	{
-		margin-left: 30%;
-		margin-right: 30%;
-		margin-top: 20px;
+		margin-left: 10%;
+		margin-right: 10%;
+		margin-top: 50px;
 		margin-bottom: 100px;
 		
 		background-color:#ffa847;
