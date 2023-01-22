@@ -69,6 +69,7 @@ p {
 
 .grid__item {
 	width: 270px;
+	height: 270px;
 	padding: 10px;
         display: block;
         text-align: center;
