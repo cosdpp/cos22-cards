@@ -12,6 +12,21 @@
   top: 0;
   width: 200px;
 }
+     .container {
+        display: flex;
+        align-items: center;
+        justify-content: center
+      }
+      img {
+        max-width: 100%
+      }
+      .image {
+        flex-basis: 40%
+      }
+      .text {
+        font-size: 20px;
+        padding-left: 20px;
+      }
     </style>
   </head>
   </head>
@@ -21,6 +36,14 @@
     </header>
     <main>
       <img class="sticky" src="Hannah.png" alt="This is me">
+       <div class="container">
+      <div class="image">
+        <img src="https://i.pinimg.com/originals/26/ea/fc/26eafc0b14488fea03fa8fa9751203ff.jpg">
+      </div>
+      <div class="text">
+        <h1>Hannah Schultermandl</h1>
+      </div>
+    </div>
       <section aria-labelledby="bio-heading">
         <h2 id="bio-heading">Biography</h2>
         <p>What you should know about me</p>
