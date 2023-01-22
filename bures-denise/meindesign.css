@@ -46,6 +46,8 @@ p {
 .grid {
 	position: relative;
 	margin: 0 auto;
+	display: flex;
+        justify-content: space-evenly;
 }
 
 .js .grid::after {
@@ -56,7 +58,6 @@ p {
 	top: 0;
 	left: 0;
 	pointer-events: none;
-	background: #252323 url(../img/loading.svg) no-repeat 50% 75px;
 	background-size: 60px auto;
 	-webkit-transition: opacity 0.3s;
 	transition: opacity 0.3s;
