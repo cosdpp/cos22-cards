@@ -91,6 +91,27 @@ p {
 	max-width: 1080px;
 	margin: 0 auto;
 }
+.codrops-header {
+	padding: 2em 1em 4em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0.5em 0 0;
+	letter-spacing: -1px;
+	font-size: 3em;
+	line-height: 1;
+	font-weight: normal;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0.5em 0 1em;
+	color: #999;
+	font-weight: normal;
+	font-size: 0.45em;
+	letter-spacing: 0;
+}
 
 .preview {
 	position: fixed;
