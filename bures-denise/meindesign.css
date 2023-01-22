@@ -9,7 +9,7 @@ body
 
 h1  {
 	color: #ffa847;
-	font-family: 'Hahmlet';
+	font-family: 'Hahmlet', monospace; 
 	font-style: italic;
 	font-size: 3.5rem;
 	
@@ -159,7 +159,7 @@ p {
 		margin-left: 30%;
 		margin-right: 30%;
 		margin-top: 20px;
-		margin-bottom: 300px;
+		margin-bottom: 100px;
 		
 		background-color:#ffa847;
 		color: white;
