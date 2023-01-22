@@ -48,6 +48,7 @@ p {
 	margin: 0 auto;
 	display: flex;
         justify-content: space-evenly;
+	margin-bottom: 100px;
 }
 
 .js .grid::after {
@@ -144,8 +145,7 @@ p {
 		margin-right: 10%;
 		margin-top: 50px;
 		margin-bottom: 50px;
-		padding-bottom: 200px;
-		padding-bottom: 200px;
+		padding-bottom: 100px;
 		
 		background-image: url(bures-denise/Wald.jpeg);
 		background-size: 100%;
