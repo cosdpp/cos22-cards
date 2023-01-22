@@ -70,6 +70,12 @@ p {
 .grid__item {
 	width: 270px;
 	padding: 10px;
+        display: block;
+        text-align: center;
+	display: flex;
+        justify-content: space-evenly;
+      }
+        
 }
 
 .grid__item--current {
