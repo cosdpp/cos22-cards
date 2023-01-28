@@ -1,33 +1,162 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>About Sansi</title>
-    <style>
-      /* Styling */
-    </style>
-  </head>
-  </head>
-  <body>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <title>Sansani Anna</title>
+  <style>
+    @font-face {
+      font-family: 'BrownSugar';
+      src: url('./fonts/BrownSugar.ttf') format('truetype');
+    }
+
+    @font-face {
+      font-family: 'Maleah-Light';
+      src: url('./fonts/Maleah-Light.ttf') format('truetype');
+    }
+
+    .content {
+      max-width: 800px;
+      margin: auto;
+    }
+
+    body {
+      font-family: Bariol, sans-serif;
+      font-size: 1.25rem;
+      background-color: #B6CAE9;
+      color: #333;
+      line-height: 1.5;
+      margin: 0 auto;
+      padding: 1rem;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    header {
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      padding-top: 80px;
+      font-family: "BrownSugar";
+    }
+
+    header h1,
+    header p {
+      margin: 0;
+    }
+
+    header p {
+      font-family: "Maleah-Light";
+    }
+
+    section {
+      font-family: "BrownSugar";
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      font-family: "Maleah-Light";
+    }
+
+    section :first-child {
+      margin-top: 0;
+    }
+
+    section :last-child {
+      margin-bottom: 0;
+    }
+
+    .avatar {
+      float: right;
+      max-width: 100%;
+      padding-left: 20px;
+    }
+
+    #gallery {
+      line-height: 0;
+      -webkit-column-count: 3;
+      -webkit-column-gap: 5px;
+      -moz-column-count: 3;
+      -moz-column-gap: 5px;
+      column-count: 3;
+      column-gap: 5px;
+    }
+
+    #gallery img {
+      width: 100% !important;
+      height: auto !important;
+      margin-bottom: 5px;
+    }
+
+    .icon-cog {
+      color: black;
+    }
+
+    .image {
+      width: 280px;
+      height: 280px;
+      border-radius: 80px;
+      object-fit: cover;
+    }
+
+    .fa {
+      padding: 0px 20px 0px 0px;
+    }
+
+    .social {
+      height: 80px;
+      width: 80px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="content">
     <header>
-      <h1>Hi, i am Sansi</h1>
+      <h1>Hi, I am Sansi</h1>
+      <p>Und, habt's scho Mittag gegessen?</p>
     </header>
     <main>
-      <section aria-labelledby="bio-heading">
-        <h2 id="bio-heading">Bio</h2>
-        <p>@@About Me@@</p>
+      <section>
+        <h2>Bio</h2>
+        <img class="avatar image" src="images/portrait.jpg"></img>
+        <p>As half austrian and half thai I like to say that I got best of both worlds but reality looks different. But
+          I have my own qualities, like humor. </p>
+        <p>I am a selfemployed Social Media Manager and Content Creator working from Vienna. My career started out of my
+          passion to capture emotions and moments in pictures. As person born on the threshold between two generations:
+          Millenial and Gen Z. </p>
       </section>
-      <section aria-labelledby="hobbies-heading">
-        <h2 id="hobbies-heading">Hobbies</h2>
-        @@My Hobbies@@
+      <section>
+        <h2>Contact Me</h2>
+        <a href="https://www.instagram.com/madebysansanianna"><img class="social" src='icon/instagram.png' /></a>
+        <a href="mailto:office@sansanianna.com"><img class="social" src='icon/mail.png' /></a>
+        <a href="tel:069911987594"><img class="social" src='icon/handy-mobiltelefon.png' /></a>
       </section>
-      <section aria-labelledby="workxp-heading">
-        <h2 id="workxp-heading">Work Experience</h2>
-        @@My Work Experience@@
+      <section>
+        <h2>My Work</h2>
+        <div id="gallery">
+          <img src="images/portfolio-11.jpg">
+          <img src="images/portfolio-12.jpg">
+          <img src="images/portfolio-13.jpg">
+          <img src="images/portfolio-14.jpg">
+          <img src="images/portfolio-15.jpg">
+          <img src="images/portfolio-16.jpg">
+          <img src="images/portfolio-17.jpg">
+          <img src="images/portfolio-18.jpg">
+          <img src="images/portfolio-19.jpg">
+          <img src="images/portfolio-20.jpg">
+        </div>
       </section>
     </main>
-    <script>
-      /* Scripting */
-    </script>
-  </body>
+  </div>
+</body>
+
 </html>
